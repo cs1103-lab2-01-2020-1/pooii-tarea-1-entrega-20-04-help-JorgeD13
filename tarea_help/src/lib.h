@@ -1,11 +1,12 @@
 //
-// Author: marvin on 4/19/20.
+// Created by Usuario on 19/04/2020.
 //
 
-#ifndef LIB_H
-#define LIB_H
-
+#ifndef TAREA_HELP_LIB_H
+#define TAREA_HELP_LIB_H
 #include <iostream>
+#include <vector>
 using namespace std;
 
-#endif //LIB_H
+#endif //TAREA_HELP_LIB_H
+

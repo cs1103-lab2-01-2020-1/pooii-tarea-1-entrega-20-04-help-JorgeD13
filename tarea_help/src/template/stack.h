@@ -1,5 +1,5 @@
 //
-// Author: marvin on 4/19/20.
+// Created by Usuario on 19/04/2020.
 //
 
 #ifndef STACK_H
@@ -14,14 +14,21 @@ private:
 
 public:
     //add copy constructor
+    Stack(const Stack& other);
     //add assignment constructor
+    explicit Stack(const vector<T>& other);
+    //Constructor por defecto:
+    Stack();
+
     void push(T const& elem);
     void pop();
     T const& top() const;
     bool empty();
     //overload == operator
+    bool operator==(const Stack& other);
+
     void print_elements(ostream& os);
-    friend ostream& operator<<(ostream& os, Stack<T> const& s);
+    template<typename t> friend ostream& operator<<(ostream& os, Stack<t> const& s);
 
 };
 
